@@ -1,4 +1,4 @@
-export const viewComponent = {
+export const viewPacienteComponent = {
  template:  
   `
 <h1 class="subheader">Información del usuario: {{user.id}}</h1>
@@ -7,7 +7,6 @@ export const viewComponent = {
     <div class="col-4">
     <p>Usuario: {{user.usuario}}</p>
     <p>NHC:{{user.NHC}}</p>
-    <p>Numero de Colegiado:  {{user.colegiado}}</p>
     <p>Nombre: {{user.nombre}}</p>
     <p>Apellido1: {{user.erApellido}}</p>
     <p>Apellido2: {{user.doApellido}}</p>
@@ -15,7 +14,6 @@ export const viewComponent = {
     <p>Fecha Nacimiento: {{user.FechaDeNacimiento}}</p>
     <p>NIFPasaporte: {{user.NIFPasaporte}}</p>
     <p>Telefono: {{user.Telefono}}</p>
-    <p>Tipo: {{user.Tipo}}</p>
     </div>
     <div class="col-4">
 <legend>Dirección</legend>
