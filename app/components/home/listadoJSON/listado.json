@@ -1,0 +1,181 @@
+{
+    "Pacientes": [{
+
+        "Paciente 1": {
+
+            "Datos personales": {
+                "N.H.C.": "0001",
+                "Nombre": "Luis",
+                "1er Apellido": "Jurado",
+                "2do Apellido": "Quesada",
+                "Genero": "Masculino",
+                "Fecha de Nacimiento": "19/08/1977",
+                "NIF o Pasaporte": "71421821J",
+                "Telefono": "693300019"
+            },
+            "Direccion": {
+                "Calle": "El Marquesat",
+                "Numero": "3",
+                "Puerta": "4",
+                "Codigo Postal": "46900",
+                "Ciudad": "Torrent",
+                "Provincia": "Valencia"
+            },
+            "Listado Aseguradoras": {
+                "Nombre Aseguradora": "ASISA",
+                "Tipo de Seguro": "Familiar",
+                "Numero de Tarjeta": "999999999"
+            }
+        },
+
+
+        "Paciente 2": {
+
+            "Datos personales": {
+                "N.H.C.": "0002",
+                "Nombre": "Patrick",
+                "1er Apellido": "Folch",
+                "2do Apellido": "Soler",
+                "Genero": "Masculino",
+                "Fecha de Nacimiento": "21/11/1998",
+                "NIF o Pasaporte": "12345678X",
+                "Telefono": "699999999"
+            },
+            "Direccion": {
+                "Calle": "Skynet",
+                "Numero": "3",
+                "Puerta": "19",
+                "Codigo Postal": "46920",
+                "Ciudad": "Mislata",
+                "Provincia": "Valencia"
+            },
+            "Listado Aseguradoras": {
+                "Nombre Aseguradora": "FREMAP",
+                "Tipo de Seguro": "Salud",
+                "Numero de Tarjeta": "888888888"
+            }
+        },
+
+
+        "Paciente 3": {
+
+            "Datos personales": {
+                "N.H.C.": "0003",
+                "Nombre": "Edu",
+                "1er Apellido": "Alcover",
+                "2do Apellido": "Alcover",
+                "Genero": "Masculino",
+                "Fecha de Nacimiento": "19/08/1977",
+                "NIF o Pasaporte": "33344456X",
+                "Telefono": "690000000"
+            },
+            "Direccion": {
+                "Calle": "El Segart",
+                "Numero": "3",
+                "Puerta": "44",
+                "Codigo Postal": "46015",
+                "Ciudad": "Valencia",
+                "Provincia": "Valencia"
+            },
+            "Listado Aseguradoras": {
+                "Nombre Aseguradora": "ASISA",
+                "Tipo de Seguro": "Dental",
+                "Numero de Tarjeta": "777777777"
+            }
+        }
+
+
+    }],
+    "Profesionales": [{
+
+        "Profesional 1": {
+            "Datos Personales": {
+                "Numero de colegiado": "3333",
+                "Nombre": "Fanny",
+                "1er Apellido": "Miranda",
+                "2do Apellido": "Miranda",
+                "Genero": "Femenino",
+                "Fecha de Nacimiento": "20/10/1977",
+                "NIF o Pasaporte": "99888777X",
+                "Telefono": "688888888",
+                "Tipo de profesional": "Medico"
+            },
+            "Direccion": {
+                "Calle": "Perdida",
+                "Numero": "23",
+                "Puerta": "18",
+                "Codigo Postal": "46014",
+                "Ciudad": "Valencia",
+                "Provincia": "Valencia"
+            }
+        },
+
+        "Profesional 2": {
+            "Datos Personales": {
+                "Numero de colegiado": "3344",
+                "Nombre": "Yonny",
+                "1er Apellido": "Boliviano",
+                "2do Apellido": "Bolivia",
+                "Genero": "Masculino",
+                "Fecha de Nacimiento": "12/1/1977",
+                "NIF o Pasaporte": "33444555X",
+                "Telefono": "655555555",
+                "Tipo de profesional": "Enfermero"
+            },
+            "Direccion": {
+                "Calle": "De mis Amores",
+                "Numero": "35",
+                "Puerta": "194",
+                "Codigo Postal": "46002",
+                "Ciudad": "Valencia",
+                "Provincia": "Valencia"
+            }
+        },
+
+
+        "Profesional 3": {
+            "Datos Personales": {
+                "Numero de colegiado": "3355",
+                "Nombre": "Nerea",
+                "1er Apellido": "Jurado",
+                "2do Apellido": "Mora",
+                "Genero": "Femenino",
+                "Fecha de Nacimiento": "08/10/2001",
+                "NIF o Pasaporte": "67678678X",
+                "Telefono": "699555421",
+                "Tipo de profesional": "Administrativo"
+            },
+            "Direccion": {
+                "Calle": "San Jaquin",
+                "Numero": "19",
+                "Puerta": "23",
+                "Codigo Postal": "12500",
+                "Ciudad": "Vinaros",
+                "Provincia": "Castellon"
+            }
+        },
+
+        "Profesional 4": {
+            "Datos Personales": {
+                "Numero de colegiado": "3366",
+                "Nombre": "Iker",
+                "1er Apellido": "Jurado",
+                "2do Apellido": "Mora",
+                "Genero": "Masculino",
+                "Fecha de Nacimiento": "16/06/2009",
+                "NIF o Pasaporte": "33356777X",
+                "Telefono": "688321555",
+                "Tipo de profesional": "Administrativo"
+            },
+            "Direccion": {
+                "Calle": "San Jaquin",
+                "Numero": "19",
+                "Puerta": "23",
+                "Codigo Postal": "12500",
+                "Ciudad": "Vinaros",
+                "Provincia": "Castellon"
+            }
+        }
+    }]
+
+}

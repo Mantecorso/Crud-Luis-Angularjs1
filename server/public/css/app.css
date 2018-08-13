@@ -1,0 +1,73 @@
+
+
+.listadoPrincipal {
+    display: flex;
+    padding: 1rem;
+}
+
+h4 {
+    padding-right: 3rem;
+}
+
+.espace {
+    padding-top: 1rem;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+.logo2 {
+    height: 100px;
+    width: 200px;
+}
+
+body {
+    background-color: rgb(186, 189, 194);
+}
+
+header {
+    height: 15vh;
+    padding-top: 10px;
+    font-family: 'Lobster', cursive;
+}
+
+.header2 {
+    text-align: center;
+    
+}
+
+.center {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer1 {
+    padding: 10px;
+}
+
+footer {
+    background-color: #1c1d26;
+    height: 11vh;
+    font-family: 'Indie Flower', cursive;
+    color: beige;
+}
+
+#cuerpo {
+  
+    font-family: 'Indie Flower', cursive;
+    
+}
+
+.iker{
+    height: 66vh;
+}
+
+.nerea {
+    color: white;
+}
+
+.alto {
+    margin-top: 3%;
+}
