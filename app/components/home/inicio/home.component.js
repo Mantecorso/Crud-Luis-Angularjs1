@@ -27,8 +27,15 @@ export const HomeComponent = {
                                     <td>{{user.nombre}}</td>
                                     <td>{{user.erApellido}}</td>
                                     <td>{{user.usuario}}</td>
-                                    <td><a ui-sref="editComponent" class="btn btn-dark nerea">X</a></td>
-                                    <td><a ui-sref="viewComponent" class="btn btn-dark nerea">X</a></td>
+                                    <td>
+                                        <div ng-if="user.usuario === 'paciente'"><a ui-sref="editPaciente/{{id}}" class=""> Editar Paciente</a></div>
+                                        <div ng-if="user.usuario === 'profesional'"><a ui-sref="editProf/{{id}}" class="">Editar Profesional</a></div>
+                                    </td>
+                                    <td>
+                                        <div ng-if="user.usuario === 'paciente'"><a ui-sref="viewPaciente/{{id}}" class="btn btn-dark nerea">Ver Paciente</a></div>
+                                        <div ng-if="user.usuario === 'profesional'"><a ui-sref="viewProf/{{id}}" class="btn btn-dark nerea">Ver Profesional</a></div>
+                                    </td>
+                                    
                                     <td>                                           
                                         <a data-toggle="modal" data-target="#deleteUsers" class="btn btn-dark nerea">X</a>
                                         <div class="modal " id="deleteUsers" tabindex="-1" role="dialog" aria-labelledby="EliminarUsers" aria-hidden="true">
