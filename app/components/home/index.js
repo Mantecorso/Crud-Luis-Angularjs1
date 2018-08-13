@@ -1,13 +1,14 @@
 import angular from 'angular';
 import DatosService from '../home/listadoJson';
-import {CuatroCeroCuatroComponent} from "./cuatrocerocuatro/cuatrocerocuatro.component";
 import {HomeComponent} from "./inicio/home.component";
 import {PacienteoProfComponent} from "./pacienteoprof/choose.component";
 import {NuevoProfesionalComponent} from "./nuevoprofesional/newprof.component";
 import {NuevoUsuarioComponent} from "./nuevousuario/newuser.component";
 import {EditProfComponent} from "./editProf/editProf.component";
 import {EditPacienteComponent} from "./editPaciente/editPaciente.component";
-import {viewComponent} from "./listadoJSON/view.component";
+import {viewPacienteComponent} from "./listadoJSON/viewPaciente.component";
+import {viewProfComponent} from "./viewProf/viewProf.component"
+import {CuatroCeroCuatroComponent} from "./cuatrocerocuatro/cuatrocerocuatro.component";
 import {BorradoComponent} from "./borrado/borrado.component";
  
 const home = angular
@@ -19,7 +20,8 @@ const home = angular
 .component ('nuevousuario', NuevoUsuarioComponent)
 .component ('editProf', EditProfComponent)
 .component('editPaciente', EditPacienteComponent)
-.component('viewComponent', viewComponent)
+.component('viewPacienteComponent', viewPacienteComponent)
+.component('viewProfComponent', viewProfComponent)
 .service('datosService', DatosService)
 .component ('borrado', BorradoComponent)
     .config(($stateProvider, $urlRouterProvider)=>{
@@ -52,10 +54,14 @@ const home = angular
             url: '/editprofesional',
             component: 'editProfesional'
         }) 
-        .state('viewComponent' , {
-            url: '/view/:id',
-            component:'viewComponent'
+        .state('viewPacienteComponent' , {
+            url: '/viewPaciente/:id',
+            component:'viewPacienteComponent'
         })    
+        .state('viewProfComponent' , {
+            url: '/viewProf/:id',
+            component:'viewProfComponent'
+        })   
         .state('inicio', {
             url: '/',
             component: 'inicio'
