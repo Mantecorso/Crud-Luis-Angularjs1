@@ -19,8 +19,7 @@ export const NuevoProfesionalComponent = {
                     </div>
                     <div class="col-md-6 mb-3">
 
-                        <input type="text" class="form-control" id="validationCustom01" ng-model="$ctrl.newUser.numero_de_colegiado" placeholder="Numero de Colegiado"
-                            required>
+                        <input type="text" class="form-control" id="validationCustom01" ng-model="$ctrl.newUser.numero_de_colegiado" placeholder="Numero de Colegiado" required>
                         <div class="invalid-feedback">
                             Por favor, introduzca un numero de colegiado correcto.
                         </div>
@@ -108,7 +107,7 @@ export const NuevoProfesionalComponent = {
                 </div>
 
                 <div class="center">
-                    <button class="btn btn-primary" value="anyadir" type="submit">
+                    <button class="btn btn-primary" value="anyadir" ui-sref="inicio" type="submit">
                     Añadir </button>
                     
                 </div>

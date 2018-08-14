@@ -32,8 +32,8 @@ export const HomeComponent = {
                                     <td>{{user.erApellido}}</td>
                                     <td>{{user.usuario}}</td>
                                     <td>
-                                        <div ng-if="user.usuario === 'paciente'"><a ui-sref="editPacienteComponent/{{userID: user.id}}" ng-click="" class="btn btn-dark nerea"> Edit</a></div>
-                                        <div ng-if="user.usuario === 'profesional'"><a ui-sref="editProfComponent/{{userID: user.id}}" class="btn btn-dark nerea">Edit</a></div>
+                                        <div ng-if="user.usuario === 'paciente'"><a ui-sref="editPaciente/{{userID: user.id}}" ng-click="" class="btn btn-dark nerea"> Edit</a></div>
+                                        <div ng-if="user.usuario === 'profesional'"><a ui-sref="editProf/{{userID: user.id}}" class="btn btn-dark nerea">Edit</a></div>
                                     </td>
                                     <td>
                                         <div ng-if="user.usuario === 'paciente'"><a ui-sref="viewPaciente/{{id}}" class="btn btn-dark nerea">View</a></div>

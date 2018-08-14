@@ -5,7 +5,7 @@ class NewProfController {
         this.datosService = datosService;
         this.newUser = [];
     }
-
+ 
     addUser(formulario) {
         if (formulario.$invalid === true) {
             return

@@ -21,7 +21,7 @@ export default class datosService {
     getJson() {
         return this.$http.get('datos/user.json')
             .then(response => {
-                this.users = response.data;
+                this.users = response.user;
                 this.saveData();
                 
                 return this.users
@@ -35,7 +35,6 @@ export default class datosService {
     deleteUser(id) {
         for (let i = 0; i < this.users.length; i++) {
             if (this.users[i].id === id) {
-                var usuario = this.users[i]
                 this.users.splice(i, 1);
             }
         }
@@ -45,7 +44,7 @@ export default class datosService {
     deleteMedic() {
         let profesion = "medico";
         for (var i = this.users.length - 1; i >= 0; i--) {
-            if (this.users[i].tipo === profesion) {
+            if (this.users[i].Tipo === profesion) {
                 this.users.splice(i, 1)
             }
         }
@@ -61,9 +60,9 @@ export default class datosService {
         this.saveData();
     }
 
-    addUser(user){
-        user.id = Math.random().toString(19).substring(2, 12) + Math.random().toString(11);
-        this.users.push(user)
+    newUser(nuevo){
+        nuevo.id = Math.random().toString(19).substring(2, 12) + Math.random().toString(11);
+        this.users.push(nuevo)
         this.saveData()
     }
 

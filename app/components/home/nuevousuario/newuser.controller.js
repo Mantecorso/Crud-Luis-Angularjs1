@@ -1,7 +1,10 @@
-class NewUserController {
+import DatosService from "../listadoJson";
 
+class NewUserController {
+     
     constructor(datosService, $state) {
         this.state = $state;
+        
         this.datosService = datosService;
         this.newUser = [];
     }
