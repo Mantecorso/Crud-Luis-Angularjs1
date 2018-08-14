@@ -50,7 +50,7 @@ export const NuevoUsuarioComponent = {
                             <select ng-model="$ctrl.newUser.Genero">
                                 <option value="hombre">Hombre</option>
                                 <option value="mujer">Mujer</option>
-                                <option value="Sin especificar"></option>
+                                <option value="Sin especificar">Sin especificar</option>
                             </select>
                         
                     </div>
