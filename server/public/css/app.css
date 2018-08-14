@@ -1,14 +1,3 @@
-
-
-.listadoPrincipal {
-    display: flex;
-    padding: 1rem;
-}
-
-h4 {
-    padding-right: 3rem;
-}
-
 .espace {
     padding-top: 1rem;
 }
@@ -54,10 +43,8 @@ footer {
     color: beige;
 }
 
-#cuerpo {
-  
-    font-family: 'Indie Flower', cursive;
-    
+#cuerpo {  
+    font-family: 'Indie Flower', cursive;    
 }
 
 .iker{
