@@ -1,3 +1,5 @@
+import controller from './viewPaciente.controller';
+
 export const viewPacienteComponent = {
  template:  
   `
@@ -5,7 +7,7 @@ export const viewPacienteComponent = {
 
 <div class="container-fluid espace alto">
     <div class="row">
-        <div class="tab">
+        <div class="tabulador">
             <button class="links" onclick="openUser(event, 'DatosPersonales')">Datos Personales</button>
             <button class="links" onclick="openUser(event, 'Direccion')">Dirección</button>
             <button class="links" onclick="openUser(event, 'ListadoAseguradoras')">Listado de Aseguradoras</button>
