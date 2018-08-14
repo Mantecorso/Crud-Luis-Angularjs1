@@ -10,7 +10,7 @@ export const EditProfComponent = {
         <div class="row">
             <div class="col-3"></div>
             <div class="col-6">
-            
+             
             <form class="needs-validation" name="formulario"  ng-submit="$ctrleditProfUser(formulario)" novalidate>
                 <div class="form-row">
 
@@ -126,7 +126,7 @@ export const EditProfComponent = {
                 </div>
                   
                 <div class="center">  
-                    <button class="btn btn-primary" type="submit" value= "add">Validar registro</button>
+                    <button class="btn btn-primary" type="submit" value= "edit">Editar registro</button>
                 </div>        
             </form>
 
