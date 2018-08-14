@@ -62,3 +62,19 @@ footer {
 .alto {
     margin-top: 3%;
 }
+
+.tabulador {
+    border: 2px solid black;
+}
+
+.links {
+    background-color: palegreen;
+}
+
+.cuadro {
+    border: 2px solid black;
+}
+
+.rectangulo {
+    border:  2px solid black;
+}
