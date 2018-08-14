@@ -1,5 +1,7 @@
-class EditPacienteController{   
-    constructor(datosService, $location) {
+class EditPacienteController{ 
+
+    constructor(datosService, $location, $state) {
+        this.state = $state;
         let path = $location.$$path.split('/')
         
         this.datosService = datosService;
@@ -11,14 +13,19 @@ class EditPacienteController{
         this.datosService.getData()
             .then(resultado =>{
                  
-                this.user = resultado.filter(item => item.id == + id)[0];
+                this.datauser = resultado.filter(item => item.id == + id)[0];
             })
     }
-    editPaciUser(user){
-        
-        this.datosService.editPaciUser(this.user);
-        
+    editPaciUser(formulario){
+
+        if(form.$invalid === true) {
+            return
+        } else {
+           this.dataService.editPacifUser(this.datauser);
+           this.state.go('home');
+        }    
     }
+        
 }
 
 export default EditPacienteController;

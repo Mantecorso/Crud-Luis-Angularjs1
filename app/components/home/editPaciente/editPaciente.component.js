@@ -2,7 +2,7 @@ import controller from './editPaciente.controller'
 
 export const EditPacienteComponent = {
     bindings:{
-        EditPaciUser: '<'
+        datauser: '<'
     },
     controller,
 template: `
