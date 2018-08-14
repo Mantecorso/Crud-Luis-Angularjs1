@@ -1,10 +1,13 @@
 class HomeController{
     constructor(datosService){
         this.datosService = datosService;
+        console.log('home controller');
+        
         this.getData();
     }
 
     getData(){
+        
         this.datosService.getData()
             .then(resultado=>{
                 this.dataResult = resultado;             

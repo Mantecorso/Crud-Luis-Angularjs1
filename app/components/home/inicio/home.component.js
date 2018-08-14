@@ -7,6 +7,7 @@ export const HomeComponent = {
     controller,
     template: `
     <div class="container-fluid" id="cuerpo">
+    {{dataResult}}
         <div class="row">
             <div class="col-3"></div>
             <div class="col-6 espace">
@@ -21,23 +22,24 @@ export const HomeComponent = {
                 </div>
                 <table class="table table-hover ">
                                 
-                                <tbody>                                     
+                                <tbody>   
+                                                                  
                                   <tr ng-repeat="user in $ctrl.dataResult">
                                      
                                     <td>{{user.nombre}}</td>
                                     <td>{{user.erApellido}}</td>
                                     <td>{{user.usuario}}</td>
                                     <td>
-                                        <div ng-if="user.usuario === 'paciente'"><a ui-sref="editPaciente/{{id}}" class=""> Editar Paciente</a></div>
-                                        <div ng-if="user.usuario === 'profesional'"><a ui-sref="editProf/{{id}}" class="">Editar Profesional</a></div>
+                                        <div ng-if="user.usuario === 'paciente'"><a ui-sref="editPaciente/{{id}}" class="btn btn-dark nerea"> Edit</a></div>
+                                        <div ng-if="user.usuario === 'profesional'"><a ui-sref="editProf/{{id}}" class="btn btn-dark nerea">Edit</a></div>
                                     </td>
                                     <td>
-                                        <div ng-if="user.usuario === 'paciente'"><a ui-sref="viewPaciente/{{id}}" class="btn btn-dark nerea">Ver Paciente</a></div>
-                                        <div ng-if="user.usuario === 'profesional'"><a ui-sref="viewProf/{{id}}" class="btn btn-dark nerea">Ver Profesional</a></div>
+                                        <div ng-if="user.usuario === 'paciente'"><a ui-sref="viewPaciente/{{id}}" class="btn btn-dark nerea">View</a></div>
+                                        <div ng-if="user.usuario === 'profesional'"><a ui-sref="viewProf/{{id}}" class="btn btn-dark nerea">View</a></div>
                                     </td>
                                     
                                     <td>                                           
-                                        <a data-toggle="modal" data-target="#deleteUsers" class="btn btn-dark nerea">X</a>
+                                        <a data-toggle="modal" data-target="#deleteUsers" class="btn btn-dark nerea">Delete</a>
                                         <div class="modal " id="deleteUsers" tabindex="-1" role="dialog" aria-labelledby="EliminarUsers" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
                                             <div class="modal-content">

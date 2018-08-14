@@ -6,7 +6,12 @@ export default class datosService {
     }
 
     getData() {
-        return Promise.resolve(this.users);
+        if (!this.users) {
+            return this.getJson()
+        } else {
+
+            return Promise.resolve(this.users);
+        }
     }
 
     saveData() {
@@ -17,7 +22,7 @@ export default class datosService {
         return this.$http.get('datos/user.json')
             .then(response => {
                 this.users = response.data;
-                console.log(this.users);
+                this.saveData();
                 
                 return this.users
             })

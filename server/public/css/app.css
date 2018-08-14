@@ -68,6 +68,10 @@ footer {
     color: white;
 }
 
+.nerea:hover {
+    background-color: pink;
+}
+
 .alto {
     margin-top: 3%;
 }
