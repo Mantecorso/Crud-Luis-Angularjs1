@@ -11,7 +11,7 @@ export const NuevoUsuarioComponent = {
         <div class="row">
             <div class="col-3"></div>
             <div class="col-6">
-                    <h1>{{user.usuario}}</h1>
+                    
             <form class="needs-validation"  name="formulario" ng-submit="$ctrl.addUser(formulario)" novalidate>
                 <div class="form-row">
 
