@@ -9,7 +9,7 @@ export const HeaderComponent = {
                 </div>
                 <div class= "col-10 header2">
                     <h1>Listado de Usuarios</h1>                                        
-                                               
+                                                
                             
                                 <a ui-sref="pacienteoprof" class="btn btn-success">Nuevo Usuario</a>
                             

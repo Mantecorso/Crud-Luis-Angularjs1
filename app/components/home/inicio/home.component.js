@@ -51,7 +51,7 @@ export const HomeComponent = {
                                                 Advertencia, vas a borrar a este usuario ¿Estás seguro?
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="submit" class="btn btn-secondary">
+                                                <button type="submit" ng-click="$ctrl.deleteUser(id)" class="btn btn-secondary">
                                                     Si
                                                 </button>
                                                 <button type="button" class="btn btn-primary" data-dismiss="modal">
