@@ -11,7 +11,7 @@ export const EditProfComponent = {
             <div class="col-3"></div>
             <div class="col-6">
             
-            <form class="needs-validation" novalidate>
+            <form class="needs-validation" name="formulario"  ng-submit="" novalidate>
                 <div class="form-row">
 
                     <div class="col-md-6 mb-3">

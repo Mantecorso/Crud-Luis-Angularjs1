@@ -62,7 +62,7 @@ export default class datosService {
     }
 
     addUser(user){
-        user.id = Math.random().toString(36).substring(2, 15) + Math.random().toString(11);
+        user.id = Math.random().toString(19).substring(2, 12) + Math.random().toString(11);
         this.users.push(user)
         this.saveData()
     }

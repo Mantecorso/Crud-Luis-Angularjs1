@@ -12,26 +12,28 @@ export const HomeComponent = {
             <div class="col-3"></div>
             <div class="col-6 espace">
             
-                <div class="listadoPrincipal">
-                    <h4> Nombre </h4>
-                    <h4> Apellido </h4>
-                    <h4> Usuario </h4>
-                    <h4> Editar </h4>
-                    <h4> Ver </h4>
-                    <h4> Borrar </h4>
-                </div>
+
                 <table class="table table-hover ">
                                 
                                 <tbody>   
-                                                                  
+                                <tr>
+                                
+                    <td><h4> Nombre </h4></td>
+                    <td><h4> Apellido </h4></td>
+                    <td><h4> Usuario </h4></td>
+                    <td><h4> Editar </h4></td>
+                    <td><h4> Ver </h4></td>
+                    <td><h4> Borrar </h4></td>
+                
+                                </tr>
                                   <tr ng-repeat="user in $ctrl.dataResult">
                                      
                                     <td>{{user.nombre}}</td>
                                     <td>{{user.erApellido}}</td>
                                     <td>{{user.usuario}}</td>
                                     <td>
-                                        <div ng-if="user.usuario === 'paciente'"><a ui-sref="editPaciente/{{id}}" class="btn btn-dark nerea"> Edit</a></div>
-                                        <div ng-if="user.usuario === 'profesional'"><a ui-sref="editProf/{{id}}" class="btn btn-dark nerea">Edit</a></div>
+                                        <div ng-if="user.usuario === 'paciente'"><a ui-sref="editPacienteComponent/{{userID: user.id}}" ng-click="" class="btn btn-dark nerea"> Edit</a></div>
+                                        <div ng-if="user.usuario === 'profesional'"><a ui-sref="editProfComponent/{{userID: user.id}}" class="btn btn-dark nerea">Edit</a></div>
                                     </td>
                                     <td>
                                         <div ng-if="user.usuario === 'paciente'"><a ui-sref="viewPaciente/{{id}}" class="btn btn-dark nerea">View</a></div>
@@ -76,4 +78,11 @@ export const HomeComponent = {
     </div>
     `
 }
-
+//<div class="listadoPrincipal">
+//<h4> Nombre </h4>
+//<h4> Apellido </h4>
+//<h4> Usuario </h4>
+//<h4> Editar </h4>
+//<h4> Ver </h4>
+//<h4> Borrar </h4>
+//</div>

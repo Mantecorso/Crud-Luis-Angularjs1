@@ -47,11 +47,11 @@ const home = angular
             component: 'borrado'
         })
         .state('editPaciente' , {
-            url: '/editpaciente',
+            url: '/editpaciente/:userID',
             component:'editPaciente'
         })
         .state('editProf', {
-            url: '/editprofesional',
+            url: '/editprofesional/:userID',
             component: 'editProfesional'
         }) 
         .state('viewPacienteComponent' , {

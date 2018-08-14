@@ -1,14 +1,20 @@
 class NewProfController {
-    constructor(datosService) {
 
+    constructor(datosService, $state) {
+        this.state= $state;
         this.datosService = datosService;
         this.newUser = [];
     }
 
-    createNewUser(){
-        this.newUser.tipo= 'profesional';
-        this.datosService.newUser(this.newUser);
-        
+    addUser(formulario) {
+        if (formulario.$invalid === true) {
+            return
+        } else {
+            this.newUser.usuario = 'profesional';
+            this.dataService.newUser(this.newUser);
+            this.state.go('home');
+        } 
+
     }
 }
 
