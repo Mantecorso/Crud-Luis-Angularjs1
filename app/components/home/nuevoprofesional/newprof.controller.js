@@ -5,13 +5,13 @@ class NewProfController {
         this.datosService = datosService;
         this.newUser = [];
     }
- 
+  
     addUser(formulario) {
         if (formulario.$invalid === true) {
             return
         } else {
             this.newUser.usuario = 'profesional';
-            this.dataService.newUser(this.newUser);
+            this.datosService.newUser(this.newUser);
             this.state.go('home');
         } 
 

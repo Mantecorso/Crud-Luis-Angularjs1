@@ -107,7 +107,7 @@ export const NuevoProfesionalComponent = {
                 </div>
 
                 <div class="center">
-                    <button class="btn btn-primary" value="anyadir" ui-sref="inicio" type="submit">
+                    <button class="btn btn-primary" value="anyadir" type="submit">
                     Añadir </button>
                     
                 </div>

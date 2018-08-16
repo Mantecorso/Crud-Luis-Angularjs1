@@ -1,5 +1,3 @@
-import DatosService from "../listadoJson";
-
 class NewUserController {
      
     constructor(datosService, $state) {

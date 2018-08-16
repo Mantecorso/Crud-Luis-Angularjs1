@@ -1,4 +1,10 @@
+import controller from './header.controller'
+
 export const HeaderComponent = {
+    bindings:{
+        medicos: '<'
+    },
+    controller,
     template: `
     <header>
     
