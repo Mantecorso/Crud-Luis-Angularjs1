@@ -9,9 +9,9 @@ export const HomeComponent = {
     <div class="container-fluid" id="cuerpo">
     
         <div class="row">
-            <div class="col-3"></div>
-            <div class="col-6 espace">
-                <table class="table table-hover ">
+        <div class="col-2"></div>
+            <div class=" col-8 espace table-responsive">
+                <table class="table table-hover">
                     
                     <tbody>   
                         <tr>                    
@@ -67,7 +67,7 @@ export const HomeComponent = {
                     </tbody>
                 </table>
             </div>
-            <div class="col-3"></div>
+            <div class="col-2"></div>
         </div>
     </div>
     `
