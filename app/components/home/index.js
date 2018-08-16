@@ -20,8 +20,8 @@ const home = angular
 .component ('nuevousuario', NuevoUsuarioComponent)
 .component ('editProf', EditProfComponent)
 .component('editPaciente', EditPacienteComponent)
-.component('viewPacienteComponent', viewPacienteComponent)
-.component('viewProfComponent', viewProfComponent)
+.component('viewPaciente', viewPacienteComponent)
+.component('viewProf', viewProfComponent)
 .service('datosService', DatosService)
 .component ('borrado', BorradoComponent)
     .config(($stateProvider, $urlRouterProvider)=>{
@@ -54,13 +54,13 @@ const home = angular
             url: '/editprof/:userID',
             component: 'editProf'
         }) 
-        .state('viewPacienteComponent' , {
-            url: '/viewPaciente/:userID',
-            component:'viewPacienteComponent'
+        .state('viewPaciente' , {
+            url: '/listadoJSON/:userID',
+            component:'viewPaciente'
         })    
-        .state('viewProfComponent' , {
+        .state('viewProf' , {
             url: '/viewProf/:userID',
-            component:'viewProfComponent'
+            component:'viewProf'
         })   
         .state('inicio', {
             url: '/',

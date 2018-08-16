@@ -11,7 +11,7 @@ class ViewProfController{
         this.datosService.getData()
             .then(resultado =>{
                  
-                this.user = resultado.filter(item => item.id == + id)[0];
+                this.viewProfesional = resultado.filter(item => item.id == + id)[0];
             })
     }
    

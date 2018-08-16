@@ -11,7 +11,7 @@ class ViewPacienteController{
         this.datosService.getData()
             .then(resultado =>{
                  
-                this.user = resultado.filter(item => item.id == + id)[0];
+                this.viewPaciente = resultado.filter(item => item.id == + id)[0];
             })
     }
    
