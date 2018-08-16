@@ -22,7 +22,7 @@ export const HomeComponent = {
                             <td><h4> Ver </h4></td>
                             <td><h4> Borrar </h4></td>
                         </tr>
-                        <tr ng-repeat="user in $ctrl.dataResult">
+                        <tr ng-repeat="user in $ctrl.dataResult track by user.id">
                                      
                             <td>{{user.nombre}}</td>
                             <td>{{user.erApellido}}</td>
@@ -35,8 +35,8 @@ export const HomeComponent = {
                                 <div ng-if="user.usuario === 'profesional'"><a ui-sref="viewProf({userID:{{user.id}}})" class="btn btn-dark nerea">View</a></div>
                             </td>            
                             <td>                                           
-                                <a data-toggle="modal" data-target="#deleteUsers" class="btn btn-dark nerea">Delete</a>
-                                <div class="modal " id="deleteUsers" tabindex="-1" role="dialog" aria-labelledby="EliminarUsers" aria-hidden="true">
+                                <a data-toggle="modal" data-target="#deleteUser{{user.id}}" href="#" class="btn btn-dark nerea">Delete</a>
+                                <div class="modal " id="deleteUser{{user.id}}" tabindex="-1" role="dialog" aria-labelledby="EliminarUsers" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
@@ -51,7 +51,7 @@ export const HomeComponent = {
                                                 Advertencia, vas a borrar a este usuario ¿Estás seguro?
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="submit" ng-click="$ctrl.deleteUser(id)" class="btn btn-secondary">
+                                                <button type="submit" ng-click="$ctrl.deleteUser(user.id)" class="btn btn-secondary">
                                                     Si
                                                 </button>
                                                 <button type="button" class="btn btn-primary" data-dismiss="modal">

@@ -17,7 +17,7 @@ class HomeController{
      deleteUser(id){
             console.log(id);
             this.datosService.deleteUser(id);
-            let modal = $('#borrarUsuario' + id);
+            let modal = $('#deleteUser' + id);
             modal.modal('hide')
  //           $('#deleteUsers'+id).modal('hide')
      }
