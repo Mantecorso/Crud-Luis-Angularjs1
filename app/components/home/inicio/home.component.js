@@ -28,11 +28,11 @@ export const HomeComponent = {
                             <td>{{user.erApellido}}</td>
                             <td>{{user.usuario}}</td>
                             <td>
-                                <div ng-if="user.usuario === 'paciente'"><a ui-sref="editPaciente/{{userID: user.id}}" ng-click="" class="btn btn-dark nerea"> Edit</a></div>
-                                <div ng-if="user.usuario === 'profesional'"><a ui-sref="editProf/{{userID: user.id}}" class="btn btn-dark nerea">Edit</a></div>                                </td>
+                                <div ng-if="user.usuario === 'paciente'"><a ui-sref="editPaciente({userID:{{ user.id}}})" class="btn btn-dark nerea"> Edit</a></div>
+                                <div ng-if="user.usuario === 'profesional'"><a ui-sref="editProf({userID:{{ user.id}}})" class="btn btn-dark nerea">Edit</a></div>                                </td>
                             <td>
-                                <div ng-if="user.usuario === 'paciente'"><a ui-sref="viewPaciente/{{id}}" class="btn btn-dark nerea">View</a></div>
-                                <div ng-if="user.usuario === 'profesional'"><a ui-sref="viewProf/{{id}}" class="btn btn-dark nerea">View</a></div>
+                                <div ng-if="user.usuario === 'paciente'"><a ui-sref="viewPaciente({userID:{{user.id}}})" class="btn btn-dark nerea">View</a></div>
+                                <div ng-if="user.usuario === 'profesional'"><a ui-sref="viewProf({userID:{{user.id}}})" class="btn btn-dark nerea">View</a></div>
                             </td>            
                             <td>                                           
                                 <a data-toggle="modal" data-target="#deleteUsers" class="btn btn-dark nerea">Delete</a>
@@ -72,11 +72,3 @@ export const HomeComponent = {
     </div>
     `
 }
-//<div class="listadoPrincipal">
-//<h4> Nombre </h4>
-//<h4> Apellido </h4>
-//<h4> Usuario </h4>
-//<h4> Editar </h4>
-//<h4> Ver </h4>
-//<h4> Borrar </h4>
-//</div>

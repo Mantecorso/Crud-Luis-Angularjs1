@@ -21,7 +21,8 @@ export default class datosService {
     getJson() {
         return this.$http.get('datos/user.json')
             .then(response => {
-                this.users = response.user;
+                
+                this.users = response.data;
                 this.saveData();
                 
                 return this.users

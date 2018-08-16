@@ -55,11 +55,11 @@ const home = angular
             component: 'editProfesional'
         }) 
         .state('viewPacienteComponent' , {
-            url: '/viewPaciente/:id',
+            url: '/viewPaciente/:userID',
             component:'viewPacienteComponent'
         })    
         .state('viewProfComponent' , {
-            url: '/viewProf/:id',
+            url: '/viewProf/:userID',
             component:'viewProfComponent'
         })   
         .state('inicio', {
