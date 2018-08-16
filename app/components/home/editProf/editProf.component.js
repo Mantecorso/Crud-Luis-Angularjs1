@@ -2,18 +2,13 @@ import controller from './editProf.controller';
 
 export const EditProfComponent = {
     bindings: {
-        datauser: '<'
+        editProfesionales: '<'
     },
     controller,
     template: `
     <div class="container-fluid alto">
         <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8>
-                <h3>Editar profesional: {{user.Tipo/:id}}</h3>
-                <h3>Nombre:  {{user.nombre/:id}}</h3>
-            </div>
-            <div class="col-2"></div>
+            
             <div class="col-3"></div>
             <div class="col-6">
              
@@ -27,34 +22,34 @@ export const EditProfComponent = {
 
                     <div class="col-md-6 mb-3">
                         
-                        <input type="text" class="form-control" id="validationCustom01" ng-model="$ctrl.datauser.Numero_de_colegiado" placeholder="Numero de Colegiado" required>
+                        <input type="text" class="form-control" id="validationCustom01" ng-model="$ctrl.editProfesionales.Numero_de_colegiado" placeholder="Numero de Colegiado" required>
                         <div class="invalid-feedback">
                             Por favor, introduzca un numero de historial correcto.
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         
-                        <input type="text" class="form-control" id="validationCustom02" ng-model="$ctrl.datauser.nombre" placeholder="Nombre" required>
+                        <input type="text" class="form-control" id="validationCustom02" ng-model="$ctrl.editProfesionales.nombre" placeholder="Nombre" required>
                         <div class="invalid-feedback">
                             Por favor, introduzca un nombre correcto.
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         
-                        <input type="text" class="form-control" id="validationCustom03" ng-model="$ctrl.datauser.erApellido" placeholder="1er Apellido" required>
+                        <input type="text" class="form-control" id="validationCustom03" ng-model="$ctrl.editProfesionales.erApellido" placeholder="1er Apellido" required>
                         <div class="invalid-feedback">
                             Primer apellido obligatorio.
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         
-                        <input type="text" class="form-control" id="validationDefault04" ng-model="$ctrl.datauser.doApellido" placeholder="2do Apellido">
+                        <input type="text" class="form-control" id="validationDefault04" ng-model="$ctrl.editProfesionales.doApellido" placeholder="2do Apellido">
                     </div>
                     <div class="col-md-4 mb-3">
 
                         <fieldset class="form-group">
                             <div class="row">
-                                <legend class="col-form-label col-sm-4 pt-0" ng-model="$ctrl.datauser.Genero">Genero</legend>
+                                <legend class="col-form-label col-sm-4 pt-0" ng-model="$ctrl.editProfesionales.Genero">Genero</legend>
                                 <div class="col-sm-8">
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
@@ -81,15 +76,15 @@ export const EditProfComponent = {
                     </div>
                     <div class="col-md-4 mb-3">
                         
-                        <input type="date" class="form-control" id="validationDefault06" ng-model="$ctrl.datauser.FechadeNacimiento" placeholder="Fecha de Nacimiento">
+                        <input type="date" class="form-control" id="validationDefault06" ng-model="$ctrl.editProfesionales.FechadeNacimiento" placeholder="Fecha de Nacimiento">
                     </div>
                     <div class="col-md-4 mb-3">
                         
-                        <input type="text" class="form-control" id="validationDefault07" ng-model="$ctrl.datauser.NIF" placeholder="NIF o Pasaporte">
+                        <input type="text" class="form-control" id="validationDefault07" ng-model="$ctrl.editProfesionales.NIF" placeholder="NIF o Pasaporte">
                     </div>
                     <div class="col-md-4 mb-3">
                         <p>Tipo de Profesional</p>
-                        <select class="custom-select my-1 mr-sm-2" ng-model="$ctrl.datauser.Tipo" id="inlineFormCustomSelectPref">
+                        <select class="custom-select my-1 mr-sm-2" ng-model="$ctrl.editProfesionales.Tipo" id="inlineFormCustomSelectPref">
                             <option selected>Escoge...</option>
                             <option value="1">Medico</option>
                             <option value="2">Enfermero</option>
@@ -106,27 +101,27 @@ export const EditProfComponent = {
                     </div>
                     <div class="col-md-4 mb-3">
                         
-                        <input type="text" class="form-control" id="validationDefault08" ng-model="$ctrl.datauser.Calle" placeholder="Calle">
+                        <input type="text" class="form-control" id="validationDefault08" ng-model="$ctrl.editProfesionales.Calle" placeholder="Calle">
                     </div>
                     <div class="col-md-4 mb-3">
                     
-                        <input type="number" class="form-control" id="validationDefault09" ng-model="$ctrl.datauser.Numero" placeholder="Numero">
+                        <input type="text" class="form-control" id="validationDefault09" ng-model="$ctrl.editProfesionales.Numero" placeholder="Numero">
                     </div>
                     <div class="col-md-4 mb-3">
                     
-                        <input type="text" class="form-control" id="validationDefault10" ng-model="$ctrl.datauser.Puerta" placeholder="Puerta">
+                        <input type="text" class="form-control" id="validationDefault10" ng-model="$ctrl.editProfesionales.Puerta" placeholder="Puerta">
                     </div>
                     <div class="col-md-4 mb-3">
                     
-                        <input type="number" class="form-control" id="validationDefault11" ng-model="$ctrl.datauser.Codigo_Postal" placeholder="Codigo Postal">
+                        <input type="text" class="form-control" id="validationDefault11" ng-model="$ctrl.editProfesionales.Codigo_Postal" placeholder="Codigo Postal">
                     </div>
                     <div class="col-md-4 mb-3">
                     
-                        <input type="text" class="form-control" id="validationDefault12" ng-model="$ctrl.datauser.Ciudad" placeholder="Ciudad">
+                        <input type="text" class="form-control" id="validationDefault12" ng-model="$ctrl.editProfesionales.Ciudad" placeholder="Ciudad">
                     </div>
                     <div class="col-md-4 mb-3">
                     
-                        <input type="text" class="form-control" id="validationDefault13" ng-model="$ctrl.datauser.Provincia" placeholder="Provincia">
+                        <input type="text" class="form-control" id="validationDefault13" ng-model="$ctrl.editProfesionales.Provincia" placeholder="Provincia">
                     </div>
                     
                 </div>

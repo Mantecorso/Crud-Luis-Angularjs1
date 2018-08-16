@@ -51,8 +51,8 @@ const home = angular
             component:'editPaciente'
         })
         .state('editProf', {
-            url: '/editprofesional/:userID',
-            component: 'editProfesional'
+            url: '/editprof/:userID',
+            component: 'editProf'
         }) 
         .state('viewPacienteComponent' , {
             url: '/viewPaciente/:userID',

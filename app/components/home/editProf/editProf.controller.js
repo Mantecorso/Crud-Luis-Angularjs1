@@ -6,22 +6,22 @@ class EditProfController{
         
         this.datosService = datosService;
         this.getID(path[path.length -1]);
-        
+        this.editProfesionales = []; 
     }
 
     getID(id){
         this.datosService.getData()
             .then(resultado =>{   
-                this.datauser = resultado.filter(item => item.id == + id)[0];
+                this.editProfesionales = resultado.filter(item => item.id == + id)[0];
             })
     }
 
     editProfUser(formulario){
 
-        if(form.$invalid === true) {
+        if(formulario.$invalid === true) {
             return
         } else {
-           this.dataService.editProfUser(this.datauser);
+           this.datosService.editProfUser(this.editProfesionales);
            this.state.go('home');
         }    
     }

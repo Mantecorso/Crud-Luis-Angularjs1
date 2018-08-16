@@ -6,22 +6,22 @@ class EditPacienteController{
         
         this.datosService = datosService;
         this.getID(path[path.length -1]);
-        
+        this.editPacientes = [];
     }
 
     getID(id){
         this.datosService.getData()
             .then(resultado =>{
                  
-                this.datauser = resultado.filter(item => item.id == + id)[0];
+                this.editPacientes = resultado.filter(item => item.id == + id)[0];
             })
     }
     editPaciUser(formulario){
 
-        if(form.$invalid === true) {
+        if(formulario.$invalid === true) {
             return
         } else {
-           this.dataService.editPacifUser(this.datauser);
+           this.datosService.editPacifUser(this.editPacientes);
            this.state.go('home');
         }    
     }
