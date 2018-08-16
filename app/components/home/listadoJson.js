@@ -43,8 +43,11 @@ export default class datosService {
     }
 
     deleteMedic() {
-        let profesion = "medico";
+        
+        let profesion = "Medico";
         for (var i = this.users.length - 1; i >= 0; i--) {
+            console.log(this.users[i].Tipo);
+            
             if (this.users[i].Tipo === profesion) {
                 this.users.splice(i, 1)
             }
@@ -61,8 +64,10 @@ export default class datosService {
         this.saveData();
     }
 
-    newUser(nuevo){
-        nuevo.id = Math.random().toString(19).substring(2, 12) + Math.random().toString(11);
+    newUser(user){
+        const nuevo = Object.assign({},user);
+        nuevo.id = `${Date.now()}${Math.round(Math.random()*100)}`
+        console.log(nuevo.id)
         this.users.push(nuevo)
         this.saveData()
     }

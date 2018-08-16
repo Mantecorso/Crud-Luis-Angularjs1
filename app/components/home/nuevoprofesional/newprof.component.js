@@ -65,9 +65,9 @@ export const NuevoProfesionalComponent = {
                         <p>Tipo de Profesional</p>
                         <select class="custom-select my-1 mr-sm-2" ng-model="$ctrl.newUser.Tipo" id="inlineFormCustomSelectPref">
                             <option selected>Escoge...</option>
-                            <option value="1">Medico</option>
-                            <option value="2">Enfermero</option>
-                            <option value="3">Administrativo</option>
+                            <option value="Medico">Medico</option>
+                            <option value="Enfermero">Enfermero</option>
+                            <option value="Administrativo">Administrativo</option>
                         </select>
 
                     </div>

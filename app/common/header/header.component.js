@@ -1,9 +1,7 @@
 import controller from './header.controller'
 
 export const HeaderComponent = {
-    bindings:{
-        medicos: '<'
-    },
+   
     controller,
     template: `
     <header>
@@ -38,7 +36,7 @@ export const HeaderComponent = {
                                             Advertencia, vas a borrar a todos los registros de profesionales medicos, <br> ¿Estás seguro?.
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="submit" value= "deleteall" ng-click="$ctrl.deleteMedic()" class="btn btn-secondary">
+                                            <button type="submit" value= "deleteall" ng-click="$ctrl.deleteMedic()" data-dismiss="modal" class="btn btn-secondary">
                                                 Si
                                             </button>
                                             <button type="button" class="btn btn-primary" data-dismiss="modal">
