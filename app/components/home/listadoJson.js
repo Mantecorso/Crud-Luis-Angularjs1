@@ -66,10 +66,10 @@ export default class datosService {
 
     newUser(user){
         const nuevo = Object.assign({},user);
+        // constante creada para evitar la repeticion de un id de forma casual al pulsar dos veces demasiado rapido
         nuevo.id = `${Date.now()}${Math.round(Math.random()*100)}`
         console.log(nuevo.id)
         this.users.push(nuevo)
         this.saveData()
     }
-
 }

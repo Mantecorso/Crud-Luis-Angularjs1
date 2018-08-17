@@ -18,7 +18,7 @@ body {
 
 header {
     height: 15vh;
-    padding-top: 10px;
+    padding-top: 1rem;
     font-family: 'Lobster', cursive;
 }
 
@@ -29,18 +29,24 @@ header {
 
 .center {
     text-align: center;
-    padding: 20px;
+    padding: 2rem;
 }
 
 .footer1 {
-    padding: 10px;
+    padding: 1rem;
 }
 
 footer {
+    margin-top:2rem; 
+    justify-content: end;
     background-color: #1c1d26;
     height: 11vh;
     font-family: 'Indie Flower', cursive;
     color: beige;
+}
+
+.subheader {
+    padding-top: 2rem;
 }
 
 #cuerpo {  
@@ -49,6 +55,21 @@ footer {
 
 .iker{
     height: 66vh;
+}
+
+.color {
+    color: darkcyan;
+    font-style: italic;
+}
+
+.Patrick {
+    color: grey;
+    padding-left: 1rem;
+}
+
+.luis {
+    display: flex;
+    flex-direction: row;
 }
 
 .nerea {
@@ -64,15 +85,15 @@ footer {
 }
 
 .tabulador {
-    border: 2px solid black;
     overflow: hidden;
+    text-align: center; 
 }
 
 .tabulador button {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px;
+    padding: 1rem;
     transition: 0.3s;
     color:#57889b;
 }
@@ -85,24 +106,19 @@ footer {
     background-color: rgb(77, 131, 86);
   }
   
-
-.links {
-    background-color: palegreen;
-}
-
 .cuadro {
     border: 2px solid black;
     animation: fadeEffect 1s;
-    background-color: rgb(77, 131, 86);
+    background-color: rgb(204, 218, 218);
+    border-radius: 6px;
+    font-family: 'Lobster', cursive;
+    min-width: 300px;
+    margin: 10px;
+    padding: 1rem;
+    display: none;
 }
 
   @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
   }
-
-.rectangulo {
-    border:  2px solid black;
-    animation: fadeEffect 1s;
-    background-color: rgb(243, 114, 114);
-}

@@ -10,18 +10,19 @@ export const HomeComponent = {
     
         <div class="row">
         <div class="col-2"></div>
-            <div class=" col-8 espace table-responsive">
-                <table class="table table-hover">
-                    
-                    <tbody>   
+            <div class=" col-8 espace table-responsive-sm">
+                <table class="table table-hover"
+                    <thead class="thead-dark">
                         <tr>                    
-                            <td><h4> Nombre </h4></td>
-                            <td><h4> Apellido </h4></td>
-                            <td><h4> Usuario </h4></td>
-                            <td><h4> Editar </h4></td>
-                            <td><h4> Ver </h4></td>
-                            <td><h4> Borrar </h4></td>
+                            <th><h4> Nombre </h4></th>
+                            <th><h4> Apellido </h4></th>
+                            <th><h4> Usuario </h4></th>
+                            <th><h4> Editar </h4></th>
+                            <th><h4> Ver </h4></th>
+                            <th><h4> Borrar </h4></th>
                         </tr>
+                        </thead>
+                        <tbody>
                         <tr ng-repeat="user in $ctrl.dataResult track by user.id">
                                      
                             <td>{{user.nombre}}</td>
