@@ -23,8 +23,13 @@ header {
 }
 
 .header2 {
-    text-align: center;
-    
+    text-align: center;  
+}
+
+.mobile {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5rem;
 }
 
 .center {
