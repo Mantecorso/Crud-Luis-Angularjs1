@@ -141,7 +141,7 @@ template: `
                 </div>  
                 <div class="center">
 					<button type="submit" value= "edit" class="btn btn-primary">
-						Editar registro.
+						Guardar.
 					</button>
 				</div>					
                         

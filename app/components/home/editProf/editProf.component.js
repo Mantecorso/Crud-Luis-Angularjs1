@@ -127,7 +127,7 @@ export const EditProfComponent = {
                 </div>
                   
                 <div class="center">  
-                    <button class="btn btn-primary" type="submit" value= "edit">Editar registro</button>
+                    <button class="btn btn-primary" type="submit" value= "edit">Guardar.</button>
                 </div>        
             </form>
 
