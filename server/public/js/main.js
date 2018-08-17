@@ -1,4 +1,4 @@
-function openUser(evt, mostrar) {
+function viewUser(evt, mostrar) {
 
     var i, cuadro, links;
 

@@ -1,13 +1,13 @@
 class NewUserController {
      
     constructor(datosService, $state) {
-        this.state = $state;
-        
+        this.state = $state;        
         this.datosService = datosService;
         this.newUser = [];
     }
 
     addUser(formulario) {
+        
         if (formulario.$invalid === true) {
             return
         } else {

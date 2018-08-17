@@ -1,6 +1,6 @@
 export const BorradoComponent = {
     template: `
-    <div class="container-fluid" id="cuerpo">
+    <div class="container-fluid cuerpo">
         <div class="row">
             <div class="col-12 center">
                 <h3> Estas seguro de querer borrar todos los datos de Medicos??</h3>

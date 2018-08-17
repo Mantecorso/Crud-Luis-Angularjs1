@@ -1,4 +1,5 @@
 export default class datosService {
+
     constructor($http) {
         this.$http = $http;
         this.users = [];
@@ -6,10 +7,10 @@ export default class datosService {
     }
 
     getData() {
+
         if (!this.users) {
             return this.getJson()
         } else {
-
             return Promise.resolve(this.users);
         }
     }
@@ -19,12 +20,11 @@ export default class datosService {
     }
 
     getJson() {
-        return this.$http.get('datos/user.json')
-            .then(response => {
-                
+
+        return this.$http.get('datos/user.json').then(response => { 
+
                 this.users = response.data;
-                this.saveData();
-                
+                this.saveData();            
                 return this.users
             })
     }
@@ -34,6 +34,7 @@ export default class datosService {
     }
 
     deleteUser(id) {
+
         for (let i = 0; i < this.users.length; i++) {
             if (this.users[i].id === id) {
                 this.users.splice(i, 1);
@@ -56,6 +57,7 @@ export default class datosService {
     }
 
     editUser(user) {
+
         for (let i = 0; i < this.users.length; i++) {
             if (this.users[i].id === user.id) {
                 this.users[i] = user;
@@ -65,10 +67,10 @@ export default class datosService {
     }
 
     newUser(user){
+
         const nuevo = Object.assign({},user);
         // constante creada para evitar la repeticion de un id de forma casual al pulsar dos veces demasiado rapido
         nuevo.id = `${Date.now()}${Math.round(Math.random()*100)}`
-        console.log(nuevo.id)
         this.users.push(nuevo)
         this.saveData()
     }

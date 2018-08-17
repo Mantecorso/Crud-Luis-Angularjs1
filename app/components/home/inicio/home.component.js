@@ -6,7 +6,7 @@ export const HomeComponent = {
     },
     controller,
     template: `
-    <div class="container-fluid d-none d-md-block" id="cuerpo">
+    <div class="container-fluid d-none d-md-block cuerpo">
    
         <div class="row">
         <div class="col-2"></div>
@@ -71,7 +71,7 @@ export const HomeComponent = {
             <div class="col-2"></div>
         </div>
     </div>
-    <div class="container-fluid d-block d-md-none" id="cuerpo">
+    <div class="container-fluid d-block d-md-none cuerpo">
     
         <div class="row">
         

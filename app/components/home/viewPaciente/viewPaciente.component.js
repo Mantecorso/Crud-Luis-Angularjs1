@@ -7,16 +7,16 @@ export const viewPacienteComponent = {
     controller,
  template:  
   `
-  <h2></h2>
-  <h1 class="subheader color" id="cuerpo">Información del usuario: <div class="Patrick">{{$ctrl.viewPaciente.nombre}}</div></h1>
+  
+  <h1 class="subheader color cuerpo">Información del usuario: <div class="Patrick">{{$ctrl.viewPaciente.nombre}}</div></h1>
 
-<div class="container-fluid espace alto" id="cuerpo">
+<div class="container-fluid espace alto cuerpo">
     <div class="row justify-content-center">
         
         <div class="tabulador col-12">
-            <button class="links btn btn-outline-danger" onclick="openUser(event, 'DatosPersonales')">Datos Personales</button>
-            <button class="links btn btn-outline-success" onclick="openUser(event, 'Direccion')">Dirección</button>
-            <button class="links btn btn-outline-danger" onclick="openUser(event, 'ListadoAseguradoras')">Listado de Aseguradoras</button>
+            <button class="links btn btn-outline-danger" onclick="viewUser(event, 'DatosPersonales')">Datos Personales</button>
+            <button class="links btn btn-outline-success" onclick="viewUser(event, 'Direccion')">Dirección</button>
+            <button class="links btn btn-outline-danger" onclick="viewUser(event, 'ListadoAseguradoras')">Listado de Aseguradoras</button>
         </div>
         
         <div id="DatosPersonales" class="cuadro">

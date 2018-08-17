@@ -1,12 +1,12 @@
 import angular from 'angular';
-import DatosService from '../home/listadoJson';
+import DatosService from '../home/datosservice';
 import {HomeComponent} from "./inicio/home.component";
 import {PacienteoProfComponent} from "./pacienteoprof/choose.component";
 import {NuevoProfesionalComponent} from "./nuevoprofesional/newprof.component";
 import {NuevoUsuarioComponent} from "./nuevousuario/newuser.component";
 import {EditProfComponent} from "./editProf/editProf.component";
 import {EditPacienteComponent} from "./editPaciente/editPaciente.component";
-import {viewPacienteComponent} from "./listadoJSON/viewPaciente.component";
+import {viewPacienteComponent} from "./viewPaciente/viewPaciente.component";
 import {viewProfComponent} from "./viewProf/viewProf.component"
 import {CuatroCeroCuatroComponent} from "./cuatrocerocuatro/cuatrocerocuatro.component";
 import {BorradoComponent} from "./borrado/borrado.component";
@@ -55,7 +55,7 @@ const home = angular
             component: 'editProf'
         }) 
         .state('viewPaciente' , {
-            url: '/listadoJSON/:userID',
+            url: '/viewPaciente/:userID',
             component:'viewPaciente'
         })    
         .state('viewProf' , {
