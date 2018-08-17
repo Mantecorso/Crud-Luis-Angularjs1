@@ -67,6 +67,20 @@ footer {
     font-style: italic;
 }
 
+.megaboton {
+    border: 2px solid black;
+    border-radius: 90px;
+    background-color: yellow;
+    color: black;
+    padding: 35px;
+    font-size: 20px;
+}
+
+.megaboton:hover {
+    background-color: palegreen;
+    color: red;
+}
+
 .Patrick {
     color: grey;
     padding-left: 1rem;

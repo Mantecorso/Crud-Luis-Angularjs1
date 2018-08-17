@@ -140,7 +140,7 @@ template: `
                     </div>
                 </div>  
                 <div class="center">
-					<button type="submit" value= "edit" class="btn btn-primary">
+					<button type="submit" value= "edit" ui-sref="inicio" class="btn btn-primary">
 						Guardar.
 					</button>
 				</div>					

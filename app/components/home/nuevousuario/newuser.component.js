@@ -122,7 +122,7 @@ export const NuevoUsuarioComponent = {
                     </div>
                 </div>  
                 <div class="center">  
-                    <button class="btn btn-primary" value="anyadir" type="submit">
+                    <button class="btn btn-primary" value="anyadir" ui-sref="inicio" type="submit">
                     Añadir </button>
                     
                 </div>        
