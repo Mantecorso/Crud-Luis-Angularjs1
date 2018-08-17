@@ -56,6 +56,7 @@ export const HeaderComponent = {
         </div>
         
     </header>
+    
     `
 }
 
