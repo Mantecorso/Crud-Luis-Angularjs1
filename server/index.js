@@ -18,4 +18,12 @@ App.get('*',(req,res,next)=>{
     }
 });
 
+//App.post('/guardar', (req, res, next)=>{
+//    if(){
+//
+//    }else{
+//        next()
+//    }
+//});
+
 App.listen(3000,()=>console.log("El servidor esta arrancado puerto 3000"));

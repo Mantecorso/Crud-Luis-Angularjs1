@@ -8,7 +8,29 @@ export const HomeComponent = {
     template: `
     <div class="container-fluid d-none d-md-block cuerpo">
    
-        <div class="row">
+        <div class="row subheader">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th> Total Clientes </th>
+                        <th> Total Pacientes </th>
+                        <th> Total Profesionales </th>
+                        <th> Total Medicos </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{user.length}}</td>
+                        <td>{{user.paciente.length}}</td>
+                        <td>{{user.profesional.length}}</td>
+                        <td>{{user.profesional.medico.length}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-3"></div>
         <div class="col-2"></div>
             <div class=" col-8 espace table-responsive-sm">
                 <table class="table table-hover"
@@ -21,8 +43,8 @@ export const HomeComponent = {
                             <th><h4> Ver </h4></th>
                             <th><h4> Borrar </h4></th>
                         </tr>
-                        </thead>
-                        <tbody>
+                    </thead>
+                    <tbody>
                         <tr ng-repeat="user in $ctrl.dataResult track by user.id">
                                      
                             <td>{{user.nombre}}</td>
@@ -73,7 +95,28 @@ export const HomeComponent = {
     </div>
     <div class="container-fluid d-block d-md-none cuerpo">
     
-        <div class="row">
+        <div class="row" subheader>
+        
+        <div class="col-12">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th> Total Clientes </th>
+                        <th> Total Pacientes </th>
+                        <th> Total Profesionales </th>
+                        <th> Total Medicos </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{user.length}}</td>
+                        <td>{{user.paciente.length}}</td>
+                        <td>{{user.profesional.length}}</td>
+                        <td>{{user.profesional.medico.length}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         
             <div class="col-12 espace table-responsive-sm">
                 <table class="table table-hover"

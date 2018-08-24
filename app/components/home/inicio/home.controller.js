@@ -1,8 +1,6 @@
 class HomeController{
     constructor(datosService){
         this.datosService = datosService;
-        console.log('home controller');
-        
         this.getData();
     }
 
@@ -17,9 +15,8 @@ class HomeController{
      deleteUser(id){
             console.log(id);
             this.datosService.deleteUser(id);
-            let modal = $('#deleteUser' + id);
-            modal.modal('hide')
- //           $('#deleteUsers'+id).modal('hide')
+            let modal = $('#deleteUser' + id)
+            modal.modal('hide');
      }
      
      deleteMedic(){

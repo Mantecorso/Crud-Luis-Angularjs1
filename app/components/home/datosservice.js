@@ -16,6 +16,7 @@ export default class datosService {
     }
 
     saveData() {
+
         localStorage.setItem('users', JSON.stringify(this.users))
     }
 
@@ -30,6 +31,7 @@ export default class datosService {
     }
 
     loadData() {
+        
         this.users = JSON.parse(localStorage.getItem('users'))
     }
 
