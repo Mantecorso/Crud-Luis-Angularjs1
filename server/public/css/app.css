@@ -37,6 +37,13 @@ header {
     padding: 2rem;
 }
 
+.doublecenter {
+    text-align: center;
+    padding: 2rem;
+    font-size: 22px;
+    font-style: italic;
+}
+
 .footer1 {
     padding: 1rem;
 }
