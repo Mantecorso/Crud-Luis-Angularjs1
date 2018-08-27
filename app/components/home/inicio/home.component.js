@@ -108,12 +108,14 @@ export const HomeComponent = {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>{{user.nombre.length}}</td>
-                        <td>{{user.paciente.length}}</td>
-                        <td>{{user.profesional.length}}</td>
-                        <td>{{user.profesional.medico.length}}</td>
+                    
+                    <tr class="doublecenter">
+                        <td>{{$ctrl.customTotal.total}}</td>
+                        <td>{{$ctrl.customTotal.pacientes}}</td>
+                        <td>{{$ctrl.customTotal.profesionales}}</td>
+                        <td>{{$ctrl.customTotal.medicos}}</td>
                     </tr>
+            
                 </tbody>
             </table>
         </div>
